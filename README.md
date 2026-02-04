@@ -1,7 +1,7 @@
 # Compile Aseprite on Linux
 This is a script to automate compiling Aseprite on Ubuntu, Fedora, and more! If you want to support the developers, buy it from [Aseprite.org](https://aseprite.org)!
 
-To run the script, simply open a terminal window, and paste this:
+To run the script, simply open a terminal window and paste this command:
 ```bash
 bash -c "$(curl -sSf 'https://raw.githubusercontent.com/mak448a/compile-aseprite-linux/refs/heads/main/compile.sh')"
 ```
@@ -15,6 +15,12 @@ The executable is stored in ~/.local/share/aseprite. Have fun!
 ## How do I run Aseprite?
 This script automatically adds Aseprite to your desktop environment's application launcher and to $PATH.
 You can launch it from your desktop environment's application launcher or by entering `aseprite` in the terminal.
+
+## Uninstall
+To remove all files created by the compile.sh script, paste this command. Your configuration, themes, or installed templates in ~/.config/aseprite will not be deleted.
+```bash
+bash -c "$(curl -sSf 'https://raw.githubusercontent.com/mak448a/compile-aseprite-linux/refs/heads/main/uninstall.sh')"
+```
 
 ## Credits
 I used [Aseprite's official compilation guide](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) to make this script.
